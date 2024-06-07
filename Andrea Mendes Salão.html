@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espaço Andréa Mendes</title>
     <link rel="stylesheet" href="Andrea Mendes Salão.css">
+    <style>
+        /* Estilo da galeria de imagens */
+        .galeria-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Define três colunas de largura igual */
+            gap: 15px; /* Espaçamento entre as imagens */
+            padding: 20px;
+        }
+
+        .galeria-container img {
+            width: 100%; /* Garante que as imagens ocupem 100% da largura das colunas */
+            height: auto; /* Mantém a proporção das imagens */
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .galeria-container img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
     <header>
-    
         <img class="header-image" src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Logo%20Sal%C3%A3o%20de%20Beleza.jpeg?raw=true" alt="Logo Espaço Andréa Mendes">
         <nav>
             <ul>
@@ -20,7 +39,6 @@
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#localizacao">Localização</a></li>
                 <li><a href="#contato">Contato</a></li>
-                
             </ul>
         </nav>
     </header>
@@ -64,16 +82,12 @@
     
     <section id="galeria">
         <h2>Galeria de Imagens</h2>
-        <div class="imagem">
+        <div class="galeria-container">
             <img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/UNHA%201.jpg?raw=true" alt="UNHA1">
-        </div>
-        <div class="imagem">
             <img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/cabelo3.jpg?raw=true" alt="Cabelo3">
-        </div>
-        <div class="imagem">
             <img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/massagem%201.jpg?raw=true" alt="Massagem">
+            <!-- Adicione mais imagens conforme necessário -->
         </div>
-        <!-- Adicione mais imagens conforme necessário -->
     </section>
 
     <section id="localizacao">
@@ -84,21 +98,18 @@
     <section id="contato">
         <h2>Contato</h2>
         <p>Telefone: (31) 987521476 <br>E-mail: andreasalao@gmail.com</p>
-       
-       
     </section>
-    <section id="social-links">
-        
-            <h2>Nossas Redes Sociais</h2>
 
-            <a href="https://instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
-            <p><a href="https://instagram.com">Acompanhe-nos no Instagram</a></p>
-            <a href="https://twitter.com" target="_blank"><img src="icons/twitter.png" alt="Whatssap"></a>
-            <p><a href="#sobre">Acompanhe-nos no Whatssap</a></p>
+    <section id="social-links">
+        <h2>Nossas Redes Sociais</h2>
+        <a href="https://instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+        <p><a href="https://instagram.com">Acompanhe-nos no Instagram</a></p>
+        <a href="https://twitter.com" target="_blank"><img src="icons/twitter.png" alt="Whatsapp"></a>
+        <p><a href="#sobre">Acompanhe-nos no Whatsapp</a></p>
     </section>
+
     <footer>
         <p>&copy; 2024 Espaço Andréa Mendes</p>
-        
     </footer>
 </body>
 </html>
