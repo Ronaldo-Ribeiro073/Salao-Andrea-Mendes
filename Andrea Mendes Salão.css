@@ -170,8 +170,9 @@ a:visited {
 .galeria-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Define três colunas de largura igual */
-    gap: 15px; /* Espaçamento entre as imagens */
+    gap: 20px; /* Espaçamento entre as imagens */
     padding: 20px;
+
 }
 
 .galeria-container img {
@@ -179,6 +180,8 @@ a:visited {
     height: auto; /* Mantém a proporção das imagens */
     border-radius: 10px;
     transition: transform 0.3s ease;
+    padding-top: 75px;
+  
 }
 
 .galeria-container img:hover {
