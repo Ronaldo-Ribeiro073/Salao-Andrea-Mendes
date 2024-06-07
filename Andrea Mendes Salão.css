@@ -1,22 +1,19 @@
 body {
-    
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-image: url(https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Cabelo%20de%20fundo%20certo.jpg?raw=true); /* URL da imagem de fundo */
-        background-size: cover; /* Faz a imagem cobrir todo o fundo */
-        background-position: center; /* Centraliza a imagem de fundo */
-        background-repeat: no-repeat; /* Não repete a imagem de fundo */
-        opacity: max;
-        color: aliceblue;
-    }
-
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Cabelo%20de%20fundo%20certo.jpg?raw=true); /* URL da imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Não repete a imagem de fundo */
+    color: aliceblue;
+}
 
 header {
     text-align: center;
     padding: 1em;
-    background-color:#060606;;
+    background-color: #F4D598;
     position: relative;
 }
 
@@ -27,7 +24,6 @@ header h1 {
 header img.header-image {
     width: 500px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
-    
 }
 
 header nav ul {
@@ -37,6 +33,8 @@ header nav ul {
     display: flex;
     justify-content: center;
     gap: 1em;
+    color: #F4D598;
+    background-color: #060606;
 }
 
 header nav ul li {
@@ -44,16 +42,17 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #060606;;
+    color: #FBBECE;
     text-decoration: none;
     font-weight: bold;
 }
+
 nav {
-    color:#FFF2E3; ;
-    background-color: #BF9D73; /* Cor de fundo da navegação */
+    display: block;
+    color: #060606;
+    background-color: rgb(243, 197, 228); /* Cor de fundo da navegação */
     padding: 10px; /* Espaçamento interno */
     border-radius: 5px; /* Arredondamento das bordas */
-    box-shadow: 0 2px 4px #060606;; /* Sombra */
 }
 
 nav ul {
@@ -69,24 +68,27 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none; /* Remove sublinhado dos links */
-    color: #333; /* Cor do texto */
+    color: black; /* Cor do texto */
     padding: 5px 10px; /* Espaçamento interno */
     border-radius: 3px; /* Arredondamento das bordas */
 }
 
 nav ul li a:hover {
-    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+    background-color: #FBBECE; /* Cor de fundo ao passar o mouse */
+    color: goldenrod;
 }
+
 section {
     padding: 2em;
     border-bottom: 1px solid #ccc;
     color: #060606;
 }
-section h2+p {
-background-color:#FBBECE;
-color: #060606;
 
+section h2 + p {
+    background-color: #FBBECE;
+    color: #060606;
 }
+
 section h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 0.5em;
@@ -121,32 +123,27 @@ footer #social-links p {
     margin: 0;
 }
 
-/* Estilo dos links*/
-
-a{  color: #F4D598;;
-
+/* Estilo dos links */
+a {
+    color: #F4D598;
 }
-a:hover{ 
+
+a:hover {
     color: aqua;
-
 }
-a:visited{
+
+a:visited {
     color: aliceblue;
 }
-nav a:hover{
-    color:#F4D598;
+
+#valores {
+    background-color: #FBBECE;
+    color: #060606;
 }
-#valores{
-    background-color:#FBBECE;
-color: #060606;
 
-
-}
-#servicos{
-    background-color:#FBBECE;
-color: #060606;
-
-
+#servicos {
+    background-color: #FBBECE;
+    color: #060606;
 }
 
 #galeria {
@@ -168,3 +165,23 @@ color: #060606;
     height: auto; /* Altura automática proporcional */
     border-radius: 5px; /* Borda arredondada */
 }
+
+/* Estilo da galeria de imagens */
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define três colunas de largura igual */
+    gap: 15px; /* Espaçamento entre as imagens */
+    padding: 20px;
+}
+
+.galeria-container img {
+    width: 100%; /* Garante que as imagens ocupem 100% da largura das colunas */
+    height: auto; /* Mantém a proporção das imagens */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.galeria-container img:hover {
+    transform: scale(1.05);
+}
+
