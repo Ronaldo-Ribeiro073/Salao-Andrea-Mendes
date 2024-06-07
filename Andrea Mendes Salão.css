@@ -1,0 +1,170 @@
+body {
+    
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-image: url(https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Cabelo%20de%20fundo%20certo.jpg?raw=true); /* URL da imagem de fundo */
+        background-size: cover; /* Faz a imagem cobrir todo o fundo */
+        background-position: center; /* Centraliza a imagem de fundo */
+        background-repeat: no-repeat; /* Não repete a imagem de fundo */
+        opacity: max;
+        color: aliceblue;
+    }
+
+
+header {
+    text-align: center;
+    padding: 1em;
+    background-color:#060606;;
+    position: relative;
+}
+
+header h1 {
+    margin: 0.5em 0;
+}
+
+header img.header-image {
+    width: 500px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #060606;;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav {
+    color:#FFF2E3; ;
+    background-color: #BF9D73; /* Cor de fundo da navegação */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Arredondamento das bordas */
+    box-shadow: 0 2px 4px #060606;; /* Sombra */
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Mostra os itens da lista em linha */
+    margin-right: 10px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #333; /* Cor do texto */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 3px; /* Arredondamento das bordas */
+}
+
+nav ul li a:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+}
+section {
+    padding: 2em;
+    border-bottom: 1px solid #ccc;
+    color: #060606;
+}
+section h2+p {
+background-color:#FBBECE;
+color: #060606;
+
+}
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+    background-color: #F4D598;
+    color-scheme: black;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer #social-links {
+    margin-top: 1em;
+}
+
+footer #social-links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+footer #social-links p {
+    display: table-column;
+    margin: 0;
+}
+
+/* Estilo dos links*/
+
+a{  color: #F4D598;;
+
+}
+a:hover{ 
+    color: aqua;
+
+}
+a:visited{
+    color: aliceblue;
+}
+nav a:hover{
+    color:#F4D598;
+}
+#valores{
+    background-color:#FBBECE;
+color: #060606;
+
+
+}
+#servicos{
+    background-color:#FBBECE;
+color: #060606;
+
+
+}
+
+#galeria {
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+#galeria h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.imagem {
+    display: inline-block;
+    margin: 10px; /* Espaçamento entre as imagens */
+}
+
+.imagem img {
+    width: 200px; /* Tamanho das imagens */
+    height: auto; /* Altura automática proporcional */
+    border-radius: 5px; /* Borda arredondada */
+}
