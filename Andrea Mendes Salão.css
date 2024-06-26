@@ -3,19 +3,33 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-image: url(https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Cabelo%20de%20fundo%20certo.jpg?raw=true); /* URL da imagem de fundo */
     background-size: cover; /* Faz a imagem cobrir todo o fundo */
     background-position: center; /* Centraliza a imagem de fundo */
-    background-repeat: round; /* Não repete a imagem de fundo */
+    background-repeat: no-repeat; /* Não repete a imagem de fundo */
     color: aliceblue;
-    
+    background-color: #F4D598;
+    position: relative; /* Necessário para o vídeo de fundo */
 }
 
+/* Estilo para o vídeo de fundo */
+/* Estilo para o vídeo de fundo */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7; /* Define a opacidade do vídeo */
+}
+/* Estilo para o cabeçalho */
 header {
+    position: relative;
     text-align: center;
     padding: 1em;
-    background-color: #F4D598;
-    position: relative;
+    background-color: #d6bed6;
+    z-index: 1;
 }
 
 header h1 {
@@ -34,7 +48,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     gap: 1em;
-    color: #F4D598;
+    color: #d6bed6;
     background-color: #060606;
 }
 
@@ -43,15 +57,43 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #FBBECE;
+    color: rgb(212, 240, 225);
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Estilo para o contêiner do vídeo */
+.video-container {
+    position: relative; /* Para posicionamento absoluto dos filhos */
+    width: 50%; /* Largura do contêiner do vídeo */
+    height: 50vh; /* Altura do contêiner do vídeo */
+    overflow: hidden; /* Esconde a parte do vídeo que ultrapassa os limites do contêiner */
+    margin: 20px auto; /* Centraliza o contêiner horizontalmente e adiciona margem superior/inferior */
+}
+
+/* Estilo para o vídeo de fundo */
+.video-background {
+    position: absolute; /* Para que o vídeo preencha o contêiner */
+    top: 50%; /* Posiciona o vídeo no centro vertical */
+    left: 50%; /* Posiciona o vídeo no centro horizontal */
+    width: 100%; /* Largura do vídeo 100% do contêiner */
+    height: auto; /* Altura automática para manter a proporção */
+    transform: translate(-50%, -50%); /* Centraliza o vídeo no contêiner */
+}
+
+/* Estilo para o conteúdo sobre o vídeo */
+.content {
+    position: relative; /* Para garantir que o conteúdo esteja acima do vídeo */
+    color: white; /* Cor do texto */
+    z-index: 1; /* Garante que o conteúdo esteja acima do vídeo */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno do conteúdo */
 }
 
 nav {
     display: block;
     color: #060606;
-    background-color: rgb(243, 197, 228); /* Cor de fundo da navegação */
+    background-color: #ffcd6a; /* Cor de fundo da navegação */
     padding: 10px; /* Espaçamento interno */
     border-radius: 5px; /* Arredondamento das bordas */
 }
@@ -75,8 +117,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #FBBECE; /* Cor de fundo ao passar o mouse */
-    color: goldenrod;
+    background-color: #d6bed6; /* Cor de fundo ao passar o mouse */
+    color: rgb(48, 4, 48);
 }
 
 section {
@@ -85,44 +127,9 @@ section {
     color: #060606;
 }
 
-section h2 + p {
-    background-color: #FBBECE;
-    color: #060606;
-}
-
 section h2 {
     border-bottom: 2px solid #333;
-    padding-bottom: 0.5em;
-    background-color: #F4D598;
-    color-scheme: black;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer #social-links {
-    margin-top: 1em;
-}
-
-footer #social-links img {
-    width: 30px;
-    height: 30px;
-    margin-right: 0.5em;
-    vertical-align: middle;
-}
-
-footer #social-links p {
-    display: table-column;
-    margin: 0;
-}
+    padding-bottom: 0.5em}
 
 /* Estilo dos links */
 a {
@@ -137,15 +144,7 @@ a:visited {
     color: aliceblue;
 }
 
-#valores {
-    background-color: #FBBECE;
-    color: #060606;
-}
 
-#servicos {
-    background-color: #FBBECE;
-    color: #060606;
-}
 
 #galeria {
     text-align: center; /* Centraliza o conteúdo */
@@ -189,3 +188,29 @@ a:visited {
     transform: scale(1.05);
 }
 
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer #social-links {
+    margin-top: 1em;
+}
+
+footer #social-links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+footer #social-links p {
+    display: table-column;
+    margin: 0;
+}
