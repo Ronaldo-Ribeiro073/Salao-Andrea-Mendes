@@ -48,8 +48,8 @@ header nav ul {
     display: flex;
     justify-content: center;
     gap: 1em;
-    color: #d6bed6;
-    background-color: #060606;
+    color: #d3c7c7;
+    background-color: rgb(0, 0, 0);
 }
 
 header nav ul li {
@@ -57,7 +57,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: rgb(212, 240, 225);
+    color: rgb(18, 247, 125);
     text-decoration: none;
     font-weight: bold;
 }
@@ -111,19 +111,19 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none; /* Remove sublinhado dos links */
-    color: black; /* Cor do texto */
+    color: aliceblue; /* Cor do texto */
     padding: 5px 10px; /* Espaçamento interno */
     border-radius: 3px; /* Arredondamento das bordas */
 }
 
 nav ul li a:hover {
-    background-color: rgb(162, 239, 242); /* Cor de fundo ao passar o mouse */
-    color: rgb(48, 4, 48);
+    background-color: rgb(228, 250, 251); /* Cor de fundo ao passar o mouse */
+    color: rgb(94, 0, 86);
 }
 
 section {
     padding: 2em;
-    border-bottom: 5px solid #f31111;
+    border-bottom: 5px solid rgba(41, 0, 47, 0.693);
     color: #060606;
 }
 
@@ -141,7 +141,7 @@ a:hover {
 }
 
 a:visited {
-    color: rgb(2, 23, 41);
+    color:aliceblue
 }
 
 
