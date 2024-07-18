@@ -6,7 +6,7 @@ body {
     background-size: cover; /* Faz a imagem cobrir todo o fundo */
     background-position: center; /* Centraliza a imagem de fundo */
     background-repeat: no-repeat; /* Não repete a imagem de fundo */
-    color: aliceblue;
+    color: rgb(0, 2, 3);
     background-color: #F4D598;
     position: relative; /* Necessário para o vídeo de fundo */
 }
@@ -84,7 +84,7 @@ header nav ul li a {
 /* Estilo para o conteúdo sobre o vídeo */
 .content {
     position: relative; /* Para garantir que o conteúdo esteja acima do vídeo */
-    color: white; /* Cor do texto */
+    color: rgb(0, 0, 0); /* Cor do texto */
     z-index: 1; /* Garante que o conteúdo esteja acima do vídeo */
     text-align: center; /* Centraliza o texto */
     padding: 20px; /* Espaçamento interno do conteúdo */
@@ -117,23 +117,23 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #d6bed6; /* Cor de fundo ao passar o mouse */
+    background-color: rgb(162, 239, 242); /* Cor de fundo ao passar o mouse */
     color: rgb(48, 4, 48);
 }
 
 section {
     padding: 2em;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 5px solid #f31111;
     color: #060606;
 }
 
 section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5em}
+    border-bottom: 10px solid #000000;
+    padding-bottom: 4em}
 
 /* Estilo dos links */
 a {
-    color: #F4D598;
+    color: #5d4000;
 }
 
 a:hover {
@@ -141,7 +141,7 @@ a:hover {
 }
 
 a:visited {
-    color: aliceblue;
+    color: rgb(2, 23, 41);
 }
 
 
@@ -154,6 +154,8 @@ a:visited {
     font-size: 24px;
     margin-bottom: 20px;
 }
+
+
 
 .imagem {
     display: inline-block;
