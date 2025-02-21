@@ -48,8 +48,8 @@ header nav ul {
     display: flex;
     justify-content: center;
     gap: 1em;
-    color: #d3c7c7;
-    background-color: rgb(0, 0, 0);
+    color: #d6bed6;
+    background-color: #060606;
 }
 
 header nav ul li {
@@ -57,7 +57,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: goldenrod;
+    color: rgb(212, 240, 225);
     text-decoration: none;
     font-weight: bold;
 }
@@ -84,7 +84,7 @@ header nav ul li a {
 /* Estilo para o conteúdo sobre o vídeo */
 .content {
     position: relative; /* Para garantir que o conteúdo esteja acima do vídeo */
-    color: rgb(0, 0, 0); /* Cor do texto */
+    color: white; /* Cor do texto */
     z-index: 1; /* Garante que o conteúdo esteja acima do vídeo */
     text-align: center; /* Centraliza o texto */
     padding: 20px; /* Espaçamento interno do conteúdo */
@@ -111,25 +111,25 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none; /* Remove sublinhado dos links */
-    color: aliceblue; /* Cor do texto */
+    color: black; /* Cor do texto */
     padding: 5px 10px; /* Espaçamento interno */
     border-radius: 3px; /* Arredondamento das bordas */
 }
 
 nav ul li a:hover {
-    background-color: rgb(228, 250, 251); /* Cor de fundo ao passar o mouse */
-    color: rgb(94, 0, 86);
+    background-color: #d6bed6; /* Cor de fundo ao passar o mouse */
+    color: rgb(48, 4, 48);
 }
 
 section {
     padding: 2em;
-    border-bottom: 5px solid rgba(41, 0, 47, 0.693);
+    border-bottom: 1px solid #f31111;
     color: #060606;
 }
 
 section h2 {
-    border-bottom: 10px solid #000000;
-    padding-bottom: 4em}
+    border-bottom: 2px solid #000000;
+    padding-bottom: 0.5em}
 
 /* Estilo dos links */
 a {
@@ -141,7 +141,7 @@ a:hover {
 }
 
 a:visited {
-    color:aliceblue
+    color: rgb(2, 23, 41);
 }
 
 
