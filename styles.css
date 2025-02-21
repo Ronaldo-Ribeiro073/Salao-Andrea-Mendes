@@ -1,18 +1,16 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
+    margin: 20px;
     padding: 0;
-    background-size: cover; /* Faz a imagem cobrir todo o fundo */
-    background-position: center; /* Centraliza a imagem de fundo */
-    background-repeat: no-repeat; /* Não repete a imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: rgb(0, 2, 3);
     background-color: #F4D598;
-    position: relative; /* Necessário para o vídeo de fundo */
+    position: relative;
 }
 
-/* Estilo para o vídeo de fundo */
-/* Estilo para o vídeo de fundo */
 .video-background {
     position: fixed;
     top: 0;
@@ -21,15 +19,16 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.7; /* Define a opacidade do vídeo */
+    opacity: 0.7;
 }
-/* Estilo para o cabeçalho */
+
 header {
     position: relative;
     text-align: center;
     padding: 1em;
     background-color: #d6bed6;
     z-index: 1;
+    margin-bottom: 20px;
 }
 
 header h1 {
@@ -37,19 +36,21 @@ header h1 {
 }
 
 header img.header-image {
-    width: 500px; /* Ajuste o tamanho da imagem conforme necessário */
+    width: 500px;
     height: auto;
 }
 
 header nav ul {
     list-style: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     display: flex;
     justify-content: center;
     gap: 1em;
     color: #d6bed6;
     background-color: #060606;
+    border: 2px solid gold;
+    border-radius: 5px;
 }
 
 header nav ul li {
@@ -62,128 +63,51 @@ header nav ul li a {
     font-weight: bold;
 }
 
-/* Estilo para o contêiner do vídeo */
-.video-container {
-    position: relative; /* Para posicionamento absoluto dos filhos */
-    width: 50%; /* Largura do contêiner do vídeo */
-    height: 50vh; /* Altura do contêiner do vídeo */
-    overflow: hidden; /* Esconde a parte do vídeo que ultrapassa os limites do contêiner */
-    margin: 20px auto; /* Centraliza o contêiner horizontalmente e adiciona margem superior/inferior */
-}
-
-/* Estilo para o vídeo de fundo */
-.video-background {
-    position: absolute; /* Para que o vídeo preencha o contêiner */
-    top: 50%; /* Posiciona o vídeo no centro vertical */
-    left: 50%; /* Posiciona o vídeo no centro horizontal */
-    width: 100%; /* Largura do vídeo 100% do contêiner */
-    height: auto; /* Altura automática para manter a proporção */
-    transform: translate(-50%, -50%); /* Centraliza o vídeo no contêiner */
-}
-
-/* Estilo para o conteúdo sobre o vídeo */
-.content {
-    position: relative; /* Para garantir que o conteúdo esteja acima do vídeo */
-    color: white; /* Cor do texto */
-    z-index: 1; /* Garante que o conteúdo esteja acima do vídeo */
-    text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Espaçamento interno do conteúdo */
-}
-
-nav {
-    display: block;
-    color: #060606;
-    background-color: #ffcd6a; /* Cor de fundo da navegação */
-    padding: 10px; /* Espaçamento interno */
-    border-radius: 5px; /* Arredondamento das bordas */
-}
-
-nav ul {
-    list-style-type: none; /* Remove os marcadores da lista */
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline; /* Mostra os itens da lista em linha */
-    margin-right: 10px; /* Espaçamento entre os itens */
-}
-
-nav ul li a {
-    text-decoration: none; /* Remove sublinhado dos links */
-    color: black; /* Cor do texto */
-    padding: 5px 10px; /* Espaçamento interno */
-    border-radius: 3px; /* Arredondamento das bordas */
-}
-
-nav ul li a:hover {
-    background-color: #d6bed6; /* Cor de fundo ao passar o mouse */
+header nav ul li a:hover {
+    background-color: #d6bed6;
     color: rgb(48, 4, 48);
 }
 
-section {
-    padding: 2em;
-    border-bottom: 1px solid #f31111;
-    color: #060606;
+.video-container {
+    position: relative;
+    width: 50%;
+    height: 50vh;
+    overflow: hidden;
+    margin: 20px auto;
 }
 
-section h2 {
-    border-bottom: 2px solid #000000;
-    padding-bottom: 0.5em}
-
-/* Estilo dos links */
-a {
-    color: #5d4000;
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
 }
 
-a:hover {
-    color: aqua;
+.content {
+    position: relative;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
 }
 
-a:visited {
-    color: rgb(2, 23, 41);
-}
-
-
-
-#galeria {
-    text-align: center; /* Centraliza o conteúdo */
-}
-
-#galeria h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-
-
-.imagem {
-    display: inline-block;
-    margin: 10px; /* Espaçamento entre as imagens */
-}
-
-.imagem img {
-    width: 200px; /* Tamanho das imagens */
-    height: auto; /* Altura automática proporcional */
-    border-radius: 5px; /* Borda arredondada */
-}
-
-/* Estilo da galeria de imagens */
 .galeria-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Define três colunas de largura igual */
-    gap: 20px; /* Espaçamento entre as imagens */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
-
+    margin: 20px;
 }
 
 .galeria-container img {
-    width: 100%; /* Garante que as imagens ocupem 100% da largura das colunas */
-    height: auto; /* Mantém a proporção das imagens */
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
     padding-top: 75px;
-  
 }
 
 .galeria-container img:hover {
@@ -195,10 +119,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-}
-
-footer p {
-    margin: 0;
+    margin-top: 20px;
 }
 
 footer #social-links {
@@ -215,4 +136,47 @@ footer #social-links img {
 footer #social-links p {
     display: table-column;
     margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+        background-color: #060606;
+        border: 2px solid gold;
+    }
+
+    .video-container {
+        width: 90%;
+        height: auto;
+    }
+
+    .galeria-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header img.header-image {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5em;
+    }
+    
+    header img.header-image {
+        width: 90%;
+    }
+
+    .content {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .galeria-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px;
+    }
 }
