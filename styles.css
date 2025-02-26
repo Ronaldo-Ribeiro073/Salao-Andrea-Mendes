@@ -159,6 +159,10 @@ footer #social-links p {
     header img.header-image {
         width: 80%;
     }
+
+    .video-background {
+        opacity: 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -178,5 +182,9 @@ footer #social-links p {
     .galeria-container {
         grid-template-columns: repeat(1, 1fr);
         margin: 10px;
+    }
+
+    .video-background {
+        opacity: 0;
     }
 }
